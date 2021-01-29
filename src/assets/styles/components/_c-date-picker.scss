@@ -1,0 +1,12 @@
+.react-datetime-picker {
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        border: 0px !important;
+    }
+}
