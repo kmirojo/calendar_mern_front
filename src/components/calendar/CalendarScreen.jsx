@@ -9,7 +9,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { uiOpenModal } from "../../actions/ui";
 import {
     eventSetActive,
-    eventDeleted,
     eventStartedLoading,
 } from "../../actions/events";
 import AddNewFav from "../ui/AddNewFav";
@@ -59,7 +58,6 @@ const CalendarScreen = () => {
     };
 
     const handleEventDelete = () => {
-        dispatch(eventDeleted());
         dispatch(eventSetActive(null));
     };
 
